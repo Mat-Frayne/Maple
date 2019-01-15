@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="static/css/template.css?version={{ range(1, 51) | random }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <script src="static/js/jquery-3.2.1.min.js?version={{ range(1, 51) | random }}"></script>
+    <script src="static/js/socket.io.min.js"></script>
+    <script src="static/js/template.js?version={{ range(1, 51) | random }}"></script>
+    <script src="static/js/player.js?version={{ range(1, 51) | random }}"></script>
+
+
+    <title>{% block title %} Template {% endblock %} - MapleMusic</title>
+
+    {% block head %}
+
+    {% endblock %}
+</head>
+
+
+<body>
+    <header>
+        <div class="first">
+            <a data-href="/">Home</a>
+            <a class="searchbutt">Search</a>
+            <a data-href="addMusic">Add Music</a>
+        </div>
+
+    </header>
+    <div class="search searchmy">
+        <div class="searchicon">&#8981;</div>
+        <input placeholder="Search" />
+    </div>
+    <div id="content">
+
+    </div>
+    {% block body %}
+
+
+    {% endblock %}
+
+</body>
+
+</html>

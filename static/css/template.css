@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+#html, body{
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #181818;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+#content{
+    width:100%;
+    min-height:800px;
+    position:absolute;
+    padding-bottom:110px;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    z-index:20;
+    height:70px;
+    background: #181818;
+    top:0px;
+}
+
+header .first{
+    padding-top:15px;
+    display: flex;
+    justify-content: center;    
+}
+
+header .first a{
+    height:100%;
+    padding-left:30px;
+    padding-right:30px;
+    line-height:100%;
+    font-size:25px;
+    font-weight: bold;
+    color:#bbb9b9;
+    cursor: pointer;
+
+}
+
+header .first a:hover{
+color:white;
+
+}
+
+.searchmy{
+    width:40%;
+    left:30%;
+    position:fixed;
+    z-index:21;
+    display:none;
+    top:0px;
+
+}
+
+.search{
+    
+    background: #363636;
+    border-radius: 4px;
+    margin-top:10px;
+}
+.search .searchicon{
+    color:#e4e3e3;
+    font-size:40px;
+    width:50px;
+    text-align:center;
+    height:50px;
+    line-height:45px;
+    float:left;
+    padding-left:10px;
+}
+.search input{
+    width: calc(100% - 60px);
+    padding-left:calc(5% - 60px);
+    height:50px;
+    outline: none;
+    background:transparent;
+    border:none;
+    border-bottom: solid .5px #e4e3e33a;
+    font-size:25px;
+    color:#e4e3e3;
+    float:left;
+
+}
+
+
+#content{
+    width:80%;
+    left:10%;
+    min-height:40px;
+    top:110px;
+}
+
+/* Add css */
+
+
+
+
+
+
+.playerperc:after {
+    content:'';
+    position:absolute;
+    top:-10px; bottom:-10px; 
+    left:-10px; right:-10px; 
+}
